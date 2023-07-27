@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link rel="stylesheet" href="/static/productsexerciseflexbox.css" />
+</head>
+<body>
+    <div class="menu">
+        <table>
+            <tr>
+                <td>Home</td>
+                <td>View Catalogue</td>
+                <td>Manage Catalogue</td>
+                <td>Help</td>
+            </tr>
+        </table>
+    </div>
+    <h1> Products</h1>
+    <div class="product-list">
+        <div class="product">
+    
+            <image class="product-image" src="{{url_for('static', filename='Chicken.png')}}" alt="product image">
+           
+            <div class="product-text">
+                <div class="product-name">Alive Chicken</div>
+                <div class="product-description">  100g of protein</div>
+                <div class="product-price">
+                   <button>$6.99 (No GST)</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <image class="product-image" src="{{url_for('static', filename='Junxiang.png')}}" alt="product image">        
+            <div class="product-text">
+                <div class="product-name">Scholar Junxiang</div>
+                <div class="product-description">  Hacks computer for you and does your bidding</div>
+                <div class="product-price">
+                    <button>$0.99 - 1.00 (No GST)</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+
+            <image class="product-image" src="{{url_for('static', filename='Goofyemoji.png')}}" alt="product image">
+          
+            <div class="product-text">
+                <div class="product-name">GoofyEmoji</div>
+                <div class="product-description">Get on the spectrum</div>
+                <div class="product-price">
+                    <button>$1000(No GST)</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+
+            <image class="product-image" src="{{url_for('static', filename='Pencilworth.png')}}" alt="product image">
+           
+            <div class="product-text">
+                <div class="product-name">Pencil</div>
+                <div class="product-description">Helps you write stuff</div>
+                <div class="product-price">
+                    <button>$100,000,000,000(No GST)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    background-color:cornflowerblue;
+}
+
+h1 {
+    color:white;
+    border-color:yellow;
+    border-width: 4px;
+    background-color:black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+}
+
+
+.Education {
+    color:red;
+}
+
+.Starch {
+    color:green;font-size:8px;
+}
+
+.PJC {
+    font-style:italic;font-family:'Courier New', Courier, monospace;
+}

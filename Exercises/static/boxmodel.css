@@ -1,0 +1,31 @@
+body {
+    background: green;
+  }
+  
+  #container {
+    background: blue;
+    width: 300px;
+    margin: 0 auto; /* how you centre align a box 
+                       / non-text */
+    margin-top: 50px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    border: 10px solid white;
+  }
+  
+  #inner {
+    text-align: centre;
+    background: red;
+    padding: 20px;
+    border: 20px solid purple;
+    margin-bottom: 20px;
+  }
+  
+  #inner2 {
+    text-align: centre;
+    background: white;
+    padding: 20px;
+    border: 20px solid purple;
+  }

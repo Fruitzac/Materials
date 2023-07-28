@@ -1,0 +1,88 @@
+-------------------------------TO BE DONE--------------------------------------
+- Organise code into multiple file
+e.g. Characters in one file, dungeon codes in one file
+
+- Simplify code:
+e.g. not(...) == False,  ... == True
+
+- Organise dipslay for user interface
+
+
+- Store skill data in text files, then use File IO to implement back the code
+
+
+-Battle layout
+  >State turn number
+    >Show statistics of players and enemies
+    >Player turn
+      >Character turn in lineup
+        >Check if stunned
+        >Input move selection 
+          -Moveset (Offensive moves/ Defensive moves)
+          -Move
+          >Check if any requirements to be met (Stamina/ charge)
+          -Target selection (If have)
+        >Perform move
+        >Check any deathes in enemy team (So dead enemies dont perform moves)
+        >Check if poisoned, weakened, drained(decrease stamina / charge)
+        >Remove any effects (When duration ends)
+        >Check for player win (Enemy lineup is empty)
+    >Enemy Turn
+      >EnemyChar Turn in lineup
+        >Check if stunned
+        >Class AI decides a move
+        >Perform move
+        >Check any deathes in player team
+        >Check if poisoned, weakened, drained
+        >Remove any effects
+        >Check for enemy win
+
+-Add more classes for both enemies and players
+
+---------------------------------Has Been Done----------------------------
+
+- Implement bars to represent health, stamina, etc
+150 Health
+[===============]  1 = 10 hp
+(current/max) * Number of bars = Number of bars needed in the healthbar
+[=========      ]
+
+- Implement parent class "Character" for enemies and players to share
+  > What should a Character class have
+  1. Hitpoints (To take damage, gain health, to determine if fallen or not)
+  2. Strength (To scale damage one can do)
+  3. Defense (Overall capability to withstand raw damage, maybe not so useful against poison)
+  4. Stats (E.g. stamina, charge, These are needed to perform powerful skills)
+  5. A name (Who else is the character then)
+  6. Their attack list (So the attacks can be called easily)
+
+    >>> 4. Stats
+    What should stats be suited too:
+    Stamina --> A stat that is recharged overtime passively (Used in almost every offensive move)
+    Charge (can be in any form) --> Unique stat to characters (Used in more powerful schools)
+
+- Implement classes for attacks/ skills
+ > Build child classes for heal / guard skills
+>>Store text to be printed out in lists (Along with matching timings and damagetext)
+>>Allows to set targets (Very important for skills that allow targetting certain enemies)
+>>Requires a cost (stamina/ charge/ rage) and executes the cost
+>>Activate skills (That affect the certain stats)
+>>Skills that give temporary effects (On strength, defense, etc for certain periods)
+  AND can clash with other skills that affect these stats
+    E.g. ----Turn 1----
+         Strength = 4
+         Increased by 2 for 3 turns
+         ----Turn 2----
+         Strength = 6
+         Decreased by 5 for 1 turn
+         ----Turn 3----
+         Strength = 1
+         ----Turn 4----
+         Strength = 6
+         ----Turn 5----
+         Strength = 4
+#Use of a function/class called Buff / debuff that creates a dictionary of values that will affect
+#a stat for a certain period, popped out of dictionary when counter(turn it lasts for) equal zero
+
+-Added the ability to select the targets to hit (From area damage, to front back enemies, to choose enemy)
+

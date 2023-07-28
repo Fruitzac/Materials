@@ -1,0 +1,14 @@
+table{
+    margin-left:auto;
+    margin-right:auto;
+    font-family:Arial, Helvetica, sans-serif;
+    border-collapse:collapse;
+    width:75%;
+}
+
+td,
+th{
+    border:1px solid #DDDDDD;
+    padding:8px;
+    test-align:center;
+}

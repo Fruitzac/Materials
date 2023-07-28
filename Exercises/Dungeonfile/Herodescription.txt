@@ -1,0 +1,31 @@
+Warrior:
+    Desc: "Rash DPS character that gets stronger with each attack"
+    Passive: "Every attack stacks a certain amount of rage. (Each stack of rage increases damage by 10%, Replacement for charge)"
+    Poke (atk1): "Supposedly this works.  -1 Stamina, +1 Rage"
+    SpinnyDisk (atk2): "Spin in a circle and pray. -4 Stamina, +3 Rage"
+    Slashcombo (atk3): "Hit opponent multiple time. -9 Rage, -5 Stamina"
+    Block (def1): "Hold both hands in front of face. +1 Stamina, +3 Defense"
+    Rest (def2): "Take a break for some stamina. +6 Stamina"
+
+Archer:
+    Desc: "Fragile ranged character that best placed at the back"
+    Passive: "Has a dodge stats. (Each stack of dodge increases dodge chance by 5%, upon dodging, reset stack to 3)
+    Arrow (atk1): "Ranged basic attack. -1 Stamina, +1 Charge, [Choose target]"
+    Rain (atk2): "Rain down arrows on your enemies. -3 Stamina, +1 Charge, [All]"
+    Explode (atk3): "Fire an explosive arrow that explodes one turn later, hitting adjacent enemies. -4 Stamina, -7 Charge, [Choose target]
+    Dodge (def1): "Become more agile. +4 Dodge, +1 Stamina, +1 Charge"
+    Rest (def2): "take a break for some rejuvenation. +5 Stamina, +3 Charge"
+
+Guardian:
+    Desc: "Naturally high health, high defense character that is meant to eat damage"
+    Passive: "Starts off with armor that replenishes every turn (Add on health)"
+    Rush (atk1): "Crash into your enemies, chance to stun. -1 Stamina, +1 Charge, 30% Chance to stun"
+    Shield (atk2): "Shield an ally, increasing their defense. -1 Stamina, +1 Charge, +4 Defense to target"
+    MegaBash (atk3): "Stomp the ground, weaken all enemies ,chance to stun all enemies. -4 Stamina, -6 Charge, -20% Strength from all enemies, 25% Chance to stun, [All]"
+    Stanced (atk4): "Cast a megashield, increasing defense of entire team. - 3 Stamina, -5 Charge, +5 defense, [ALL teammates]
+    Guard (def1): "Become immune to the next attack. +1 Stamina, -1 Charge"
+    Rest (def2): "take a break. +5 Stamina, +3 Charge"
+    
+
+
+
